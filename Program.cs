@@ -9,7 +9,7 @@ Console.WriteLine(cibiPreferiti.Length + " questa è la lunghezza della classifi
 //stampo l'array come una classifica
 for(int i = 0; i < cibiPreferiti.Length; i++)
 {
-    Console.WriteLine(i+")" + cibiPreferiti[i]);
+    Console.WriteLine(i+") " + cibiPreferiti[i]);
 }
 
 //stampo la prima posizione
@@ -25,7 +25,7 @@ for (int i = 0; i < cibiPreferiti.Length; i++)
     //verifico che non sia il primo o l'ultimo elemento
     if (i > 1 && i < cibiPreferiti.Length - 2)
     {
-        Console.WriteLine(i + ")" + cibiPreferiti[i]);
+        Console.WriteLine(i + ") " + cibiPreferiti[i]);
     }
     
 }
