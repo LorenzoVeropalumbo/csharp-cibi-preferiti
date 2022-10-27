@@ -225,12 +225,14 @@ if(cibiPreferiti.Length % 2 == 0)
 
     int[] arrayToSave = new int[50];
     int sum = 0;
-    for (int i = 0; sum < 49 ; i++)
+    int i = 0;
+    while(sum < 49)
     {
         Console.WriteLine("scegli un numero");
         int userNumber = Convert.ToInt32(Console.ReadLine());
         arrayToSave[i] = userNumber;
         sum += userNumber;
+        i++;
         Console.WriteLine(sum + " somma attuale");
     }
 }
