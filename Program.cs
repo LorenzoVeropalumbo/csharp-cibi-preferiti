@@ -17,3 +17,15 @@ Console.WriteLine(cibiPreferiti[0] + " questa è il mio cibo preferito");
 
 //stampo l' ultima posizione
 Console.WriteLine(cibiPreferiti[cibiPreferiti.Length - 1] + " questa è il mio cibo preferito ma non troppo");
+
+//Bonus
+//scorro l'array
+for (int i = 0; i < cibiPreferiti.Length; i++)
+{
+    //verifico che non sia il primo o l'ultimo elemento
+    if (i > 0 && i < cibiPreferiti.Length - 1)
+    {
+        Console.WriteLine(i + ")" + cibiPreferiti[i]);
+    }
+    
+}
