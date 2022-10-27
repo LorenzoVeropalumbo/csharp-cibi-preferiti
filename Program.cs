@@ -242,4 +242,17 @@ if(cibiPreferiti.Length % 2 == 0)
 
     Console.WriteLine("scegli un numero");
     int userNumber = Convert.ToInt32(Console.ReadLine());
+
+    for (int i = 0; i < userNumber; i++)
+    {
+        int[] arrayToSave = new int[10];
+        
+        for (int j = 0; j < arrayToSave.Length; j++)
+        {
+            Random rd = new Random();
+            arrayToSave[i] = rd.Next(1, 200);
+            Console.Write(arrayToSave[i] + "-");
+        }
+        Console.WriteLine();
+    }
 }
