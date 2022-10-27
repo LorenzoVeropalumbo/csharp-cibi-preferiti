@@ -107,7 +107,7 @@ if(cibiPreferiti.Length % 2 == 0)
 
     int totalSum = 0;
 
-    for (int i = 0; i < 1; i++)
+    for (int i = 0; i < 10; i++)
     {
         Console.WriteLine("insert a numeber");
         int numberToSum = Convert.ToInt32(Console.ReadLine());
@@ -225,7 +225,7 @@ if(cibiPreferiti.Length % 2 == 0)
 
     int[] arrayToSave = new int[50];
     int sum = 0;
-    for (int i = 0; sum < 50 ; i++)
+    for (int i = 0; sum < 49 ; i++)
     {
         Console.WriteLine("scegli un numero");
         int userNumber = Convert.ToInt32(Console.ReadLine());
@@ -250,7 +250,7 @@ if(cibiPreferiti.Length % 2 == 0)
         for (int j = 0; j < arrayToSave.Length; j++)
         {
             Random rd = new Random();
-            arrayToSave[i] = rd.Next(1, 200);
+            arrayToSave[i] = rd.Next(1, 100);
             Console.Write(arrayToSave[i] + "-");
         }
         Console.WriteLine();
