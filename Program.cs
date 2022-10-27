@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 // crezione dell'array dei cibi preferiti
+using System;
+
 string[] cibiPreferiti = { "carbonara", "pizza", "sushi", "patatine fritte", "pancake" };
 
 //stampo la lunghezza dell'array
@@ -39,74 +41,153 @@ if(cibiPreferiti.Length % 2 == 0)
 
 
 //Snack ISTRUZIONI CONDIZIONALI
+{ 
+    /*L’utente inserisce due numeri in successione.
+    Il software stampa il maggiore.*/
 
-/*L’utente inserisce due numeri in successione.
-Il software stampa il maggiore.*/
+    //ask 2 numbers from the console
+    Console.WriteLine("inserisci un numero");
+    int primoNumero = Convert.ToInt32(Console.ReadLine());
 
-//ask 2 numbers from the console
-Console.WriteLine("inserisci un numero");
-int primoNumero = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("inserisci un altro numero");
+    int secondoNumero = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("inserisci un altro numero");
-int secondoNumero = Convert.ToInt32(Console.ReadLine());
-
-//check if the numbers are the same value
-if(primoNumero != secondoNumero)
-{
-    //check if the first is bigger then the second
-    if (primoNumero > secondoNumero)
+    //check if the numbers are the same value
+    if(primoNumero != secondoNumero)
     {
-        Console.WriteLine("il primo numero è maggiore del secondo");
-    } else
-    {
-        Console.WriteLine("il secondo numero è maggiore del primo");
-    }
-}
-else
-{
-    Console.WriteLine("i numeri sono uguali");
-}
-
-/*L’utente inserisce due parole in successione.
-Il software stampa prima la parola più corta, poi la parola più lunga.*/
-
-//ask 2 numbers from the console
-Console.WriteLine("insert a word");
-string firstWord = Console.ReadLine();
-
-Console.WriteLine("insert another word");
-string secondWord = Console.ReadLine();
-
-
-if (firstWord.Length != secondWord.Length)
-{
-    //check if the first is bigger then the second
-    if (firstWord.Length > secondWord.Length)
-    {
-        Console.WriteLine("the first is bigger then the second");
+        //check if the first is bigger then the second
+        if (primoNumero > secondoNumero)
+        {
+            Console.WriteLine("il primo numero è maggiore del secondo");
+        } else
+        {
+            Console.WriteLine("il secondo numero è maggiore del primo");
+        }
     }
     else
     {
-        Console.WriteLine("the second is bigger then the first");
+        Console.WriteLine("i numeri sono uguali");
     }
 }
-else
-{
-    Console.WriteLine("the word have the same length");
+{ 
+    /*L’utente inserisce due parole in successione.
+    Il software stampa prima la parola più corta, poi la parola più lunga.*/
+
+    //ask 2 numbers from the console
+    Console.WriteLine("insert a word");
+    string firstWord = Console.ReadLine();
+
+    Console.WriteLine("insert another word");
+    string secondWord = Console.ReadLine();
+
+
+    if (firstWord.Length != secondWord.Length)
+    {
+        //check if the first is bigger then the second
+        if (firstWord.Length > secondWord.Length)
+        {
+            Console.WriteLine("the first is bigger then the second");
+        }
+        else
+        {
+            Console.WriteLine("the second is bigger then the first");
+        }
+    }
+    else
+    {
+        Console.WriteLine("the word have the same length");
+    }
 }
 
 //CICLO FOR
+{ 
+    /*Il software deve chiedere per 10 volte all’utente di inserire un numero.
+    Il programma stampa la somma di tutti i numeri inseriti.*/
 
-/*Il software deve chiedere per 10 volte all’utente di inserire un numero.
-Il programma stampa la somma di tutti i numeri inseriti.*/
+    int totalSum = 0;
 
-/*int[] numeri */
-int totalSum = 0;
-for (int i = 0; i < 10; i++)
-{
-    Console.WriteLine("insert a numeber");
-    int numberToSum = Convert.ToInt32(Console.ReadLine());
-    totalSum += numberToSum;
+    for (int i = 0; i < 1; i++)
+    {
+        Console.WriteLine("insert a numeber");
+        int numberToSum = Convert.ToInt32(Console.ReadLine());
+        totalSum += numberToSum;
+    }
+
+    Console.WriteLine("your total sum is {0}", totalSum);
 }
 
-Console.WriteLine("your total sum is {0}", totalSum);
+{
+    /*Calcola la somma e la media dei numeri da 2 a 10.*/
+    int Media = 0;
+    int TotalCicleDo = 0;
+    for (int i = 2; i < 11; i++)
+    {
+        Media += i;
+        TotalCicleDo++;
+    }
+
+    float Total = Media / TotalCicleDo;
+    Console.WriteLine(Total + " è la tua media");
+}
+
+
+// OPERATORE MODULO
+{
+    Console.WriteLine("insert a numeber");
+    int userNumber = Convert.ToInt32(Console.ReadLine());
+
+    if (userNumber % 2 == 0)
+    {
+        Console.WriteLine(userNumber);
+    }
+    else
+    {
+        Console.WriteLine(userNumber+1);
+    }
+}
+
+//ARRAY
+
+{
+    /*In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
+    Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla
+    festa.*/
+
+    string[] nomiInvitati = { "luca", "paolo", "lorenzo" };
+
+    Console.WriteLine("scrivi il tuo nome");
+    string UserName = Console.ReadLine();
+    bool isIn = false;
+
+    for (int i = 0; i < nomiInvitati.Length; i++)
+    {
+        if (nomiInvitati[i].Equals(UserName))
+        {
+            isIn = true;
+        }
+    }
+
+    if (isIn)
+    {
+        Console.WriteLine("sei nella lista");
+    } else
+    {
+        Console.WriteLine("non sei nella lista");
+    }
+
+}
+
+{
+    /* Crea un array vuoto.
+    Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo
+    nell’array.*/
+    int[] arrayToSave = new int[6];
+
+    for (int i = 0; i < 6; i++)
+    {
+        Console.WriteLine("sei nella lista");
+        int userNumber = Convert.ToInt32(Console.ReadLine());
+
+        if()
+    }
+}
