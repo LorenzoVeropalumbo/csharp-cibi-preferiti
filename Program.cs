@@ -2,6 +2,7 @@
 
 // crezione dell'array dei cibi preferiti
 using System;
+using System.Xml.Linq;
 
 string[] cibiPreferiti = { "carbonara", "pizza", "sushi", "patatine fritte", "pancake" };
 
@@ -185,9 +186,60 @@ if(cibiPreferiti.Length % 2 == 0)
 
     for (int i = 0; i < 6; i++)
     {
-        Console.WriteLine("sei nella lista");
+        Console.WriteLine("scegli un numero");
         int userNumber = Convert.ToInt32(Console.ReadLine());
 
-        if()
+        if(userNumber % 2 == 1) 
+        {
+            arrayToSave[i] = userNumber;
+        }
+     
     }
+
+    for (int i = 0; i < arrayToSave.Length; i++)
+    {
+        Console.Write(arrayToSave[i] + "-");
+    }
+}
+
+{
+    /*Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in
+    posizione dispari.*/
+    int[] arrayToSave = {1,2,3,4,5,6,7};
+    int sum = 0;
+    for (int i = 0; i < arrayToSave.Length; i++)
+    {
+        if(i % 2 == 1)
+        {
+            sum += arrayToSave[i];
+        }
+    }
+
+    Console.WriteLine(sum);
+}
+
+{
+    /*Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.
+    Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la
+    somma degli elementi è minore di 50.*/
+
+    int[] arrayToSave = new int[50];
+    int sum = 0;
+    for (int i = 0; sum < 50 ; i++)
+    {
+        Console.WriteLine("scegli un numero");
+        int userNumber = Convert.ToInt32(Console.ReadLine());
+        arrayToSave[i] = userNumber;
+        sum += userNumber;
+        Console.WriteLine(sum + " somma attuale");
+    }
+}
+
+{
+    /*Fai inserire un numero, che chiameremo N, all’utente.
+    Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+    Ogni volta che ne crei uno, stampalo a schermo.*/
+
+    Console.WriteLine("scegli un numero");
+    int userNumber = Convert.ToInt32(Console.ReadLine());
 }
