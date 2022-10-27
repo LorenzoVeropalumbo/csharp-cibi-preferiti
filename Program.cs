@@ -16,4 +16,4 @@ for(int i = 0; i < cibiPreferiti.Length; i++)
 Console.WriteLine(cibiPreferiti[0] + " questa è il mio cibo preferito");
 
 //stampo l' ultima posizione
-Console.WriteLine(cibiPreferiti[1] + " questa è il mio cibo preferito");
+Console.WriteLine(cibiPreferiti[cibiPreferiti.Length - 1] + " questa è il mio cibo preferito ma non troppo");
