@@ -24,16 +24,13 @@ Console.WriteLine(cibiPreferiti[cibiPreferiti.Length - 1] + " questa è il mio c
 
 //Bonus
 //scorro l'array
-int index2 = 1;
 for (int i = 0; i < cibiPreferiti.Length; i++)
 {
     //verifico che non sia il primo o l'ultimo elemento
     if (i > 1 && i < cibiPreferiti.Length - 2)
     {
-        Console.WriteLine(index2++ + ") " + cibiPreferiti[i]);
+        Console.WriteLine(i+1 + ") " + cibiPreferiti[i]);
     }
-
-    index2++;
 }
 
 //modo alternativo
