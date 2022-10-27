@@ -23,7 +23,7 @@ Console.WriteLine(cibiPreferiti[cibiPreferiti.Length - 1] + " questa è il mio c
 for (int i = 0; i < cibiPreferiti.Length; i++)
 {
     //verifico che non sia il primo o l'ultimo elemento
-    if (i > 0 && i < cibiPreferiti.Length - 1)
+    if (i > 1 && i < cibiPreferiti.Length - 2)
     {
         Console.WriteLine(i + ")" + cibiPreferiti[i]);
     }
