@@ -29,3 +29,6 @@ for (int i = 0; i < cibiPreferiti.Length; i++)
     }
     
 }
+
+//modo alternativo
+Console.WriteLine(cibiPreferiti[cibiPreferiti.Length/2]);
