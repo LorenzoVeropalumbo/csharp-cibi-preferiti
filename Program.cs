@@ -6,10 +6,14 @@ string[] cibiPreferiti = { "carbonara", "pizza", "sushi", "patatine fritte", "pa
 //stampo la lunghezza dell'array
 Console.WriteLine(cibiPreferiti.Length + " questa è la lunghezza della classifica dei cibi");
 
+//variabile per contare l'array
+int index = 1;
 //stampo l'array come una classifica
 for(int i = 0; i < cibiPreferiti.Length; i++)
-{
-    Console.WriteLine(i+") " + cibiPreferiti[i]);
+{   
+    
+    Console.WriteLine(index+") " + cibiPreferiti[i]);
+    index++;
 }
 
 //stampo la prima posizione
@@ -20,15 +24,17 @@ Console.WriteLine(cibiPreferiti[cibiPreferiti.Length - 1] + " questa è il mio c
 
 //Bonus
 //scorro l'array
+int index2 = 1;
 for (int i = 0; i < cibiPreferiti.Length; i++)
 {
     //verifico che non sia il primo o l'ultimo elemento
     if (i > 1 && i < cibiPreferiti.Length - 2)
     {
-        Console.WriteLine(i + ") " + cibiPreferiti[i]);
+        Console.WriteLine(index2++ + ") " + cibiPreferiti[i]);
     }
-    
+
+    index2++;
 }
 
 //modo alternativo
-Console.WriteLine(cibiPreferiti[cibiPreferiti.Length/2]);
+Console.WriteLine((cibiPreferiti.Length / 2 + 1) + ") " + cibiPreferiti[cibiPreferiti.Length/2]);
