@@ -35,3 +35,14 @@ for (int i = 0; i < cibiPreferiti.Length; i++)
 
 //modo alternativo
 Console.WriteLine((cibiPreferiti.Length / 2 + 1) + ") " + cibiPreferiti[cibiPreferiti.Length/2]);
+
+//soluzine di paolo
+if(cibiPreferiti.Length % 2 == 0)
+{
+    Console.WriteLine((cibiPreferiti.Length / 2 + 1) + ") " + cibiPreferiti[cibiPreferiti.Length / 2]);
+    Console.WriteLine((cibiPreferiti.Length / 2 + 1) + ") " + cibiPreferiti[cibiPreferiti.Length / 2 - 1]);
+
+} else
+{
+    Console.WriteLine((cibiPreferiti.Length / 2 + 1) + ") " + cibiPreferiti[cibiPreferiti.Length / 2]);
+}
