@@ -259,54 +259,54 @@
 //    }
 //}
 
-{
-    Console.WriteLine("insert a word");
-    string firstWord = Console.ReadLine();
+//{
+//    Console.WriteLine("insert a word");
+//    string firstWord = Console.ReadLine();
 
-    Console.WriteLine("insert another word");
-    string secondWord = Console.ReadLine();
+//    Console.WriteLine("insert another word");
+//    string secondWord = Console.ReadLine();
 
-    string wardToPrint = checkWordLength(firstWord, secondWord);
+//    string wardToPrint = checkWordLength(firstWord, secondWord);
 
-    string checkWordLength(string word1, string word2)
-    {
-        if (word1.Length != word2.Length)
-        {
-            //check if the first is bigger then the second
-            if (word1.Length > word2.Length)
-            {
-                return word1;
-            }
-            else
-            {
-                return word2;
-            }
-        }
-        else
-        {
-            return word2 + " è lunga quanto " + word1;
-        }
-    }
+//    string checkWordLength(string word1, string word2)
+//    {
+//        if (word1.Length != word2.Length)
+//        {
+//            //check if the first is bigger then the second
+//            if (word1.Length > word2.Length)
+//            {
+//                return word1;
+//            }
+//            else
+//            {
+//                return word2;
+//            }
+//        }
+//        else
+//        {
+//            return word2 + " è lunga quanto " + word1;
+//        }
+//    }
 
-    Console.WriteLine(wardToPrint);
+//    Console.WriteLine(wardToPrint);
 
 
-}
+//}
 
-{
-    checkNumeber();
+//{
+//    checkNumeber();
 
-    void checkNumeber()
-    {
-        Console.WriteLine("scegli un numero");
-        int userNumber = Convert.ToInt32(Console.ReadLine());
+//    void checkNumeber()
+//    {
+//        Console.WriteLine("scegli un numero");
+//        int userNumber = Convert.ToInt32(Console.ReadLine());
 
-        if(userNumber % 2 == 0)
-        {
-            Console.WriteLine("il numero è pari");
-        } else
-        {
-            Console.WriteLine("il numero è dispari");
-        }
-    }
-}
+//        if(userNumber % 2 == 0)
+//        {
+//            Console.WriteLine("il numero è pari");
+//        } else
+//        {
+//            Console.WriteLine("il numero è dispari");
+//        }
+//    }
+//}
