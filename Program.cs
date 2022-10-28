@@ -226,7 +226,7 @@ if(cibiPreferiti.Length % 2 == 0)
     int[] arrayToSave = new int[50];
     int sum = 0;
     int i = 0;
-    while(sum < 49)
+    while(sum <= 49)
     {
         Console.WriteLine("scegli un numero");
         int userNumber = Convert.ToInt32(Console.ReadLine());
