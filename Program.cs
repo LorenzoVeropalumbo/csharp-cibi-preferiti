@@ -266,27 +266,29 @@
     Console.WriteLine("insert another word");
     string secondWord = Console.ReadLine();
 
-    checkWordLength(firstWord, secondWord);
+    string wardToPrint = checkWordLength(firstWord, secondWord);
 
-    void checkWordLength(string word1, string word2)
+    string checkWordLength(string word1, string word2)
     {
         if (word1.Length != word2.Length)
         {
             //check if the first is bigger then the second
             if (word1.Length > word2.Length)
             {
-                Console.WriteLine(word1);
+                return word1;
             }
             else
             {
-                Console.WriteLine(word2);
+                return word2;
             }
         }
         else
         {
-            Console.WriteLine("le parole sono lunghe uguale " + word1 + " - " + word2);
+            return word2 + " " + word1;
         }
     }
+
+    Console.WriteLine(wardToPrint);
 
 
 }
