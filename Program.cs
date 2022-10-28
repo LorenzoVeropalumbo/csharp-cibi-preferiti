@@ -87,11 +87,11 @@ if(cibiPreferiti.Length % 2 == 0)
         //check if the first is bigger then the second
         if (firstWord.Length > secondWord.Length)
         {
-            Console.WriteLine("the first is bigger then the second");
+            Console.WriteLine(firstWord + " " + secondWord);
         }
         else
         {
-            Console.WriteLine("the second is bigger then the first");
+            Console.WriteLine(secondWord + " " + firstWord);
         }
     }
     else
