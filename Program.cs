@@ -284,7 +284,7 @@
         }
         else
         {
-            return word2 + " " + word1;
+            return word2 + " è lunga quanto " + word1;
         }
     }
 
